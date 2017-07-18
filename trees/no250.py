@@ -11,7 +11,6 @@ Given binary tree,
            / \   \
           5   5   5
 return 4.
-
 """
 
 
@@ -24,8 +23,13 @@ class TreeNode(object):
 
 class Solution(object):
     def countUnivalSubtrees(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        
+        self.count = 0
+        def helper(root):
+            if not root: return True
+            l, r = helper(root.left), helper(root.right)
+            if not l or not r or root.left and root.val != root.left.val or root.right and root.val != root.right.val:
+                return False
+            self.count += 1
+            return True
+        helper(root)
+        return self.count
