@@ -6,7 +6,7 @@ class Solution(object):
 		digits = set(h).union(set(m))
 
 		cand_all = [int(a+b) for a in digits for b in digits]
-		cand_h = sorted([c for c in cand_all if c < 24])
+		cand_h = sorted(filter(lambda x:x<24, cand_all))
 		cand_m = sorted([c for c in cand_all if c < 60])
 
 		i, j = cand_h.index(int(h)), cand_m.index(int(m))
