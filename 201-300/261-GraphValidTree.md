@@ -28,7 +28,7 @@ The addition: the number of connected components should be also considered. If t
 
 **The python code:**
 
-```
+```python
 def validTree(edges, n):
 
     parents = range(n)
