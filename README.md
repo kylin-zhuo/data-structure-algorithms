@@ -3,6 +3,12 @@
 
 ### 数组 链表
 [64.合并排序数组](lintcode/code/64.java)
+[156.合并区间](lintcode/code/156.java)
+[400.最大间距](lintcode/code/400.java)
+
+
+### 指针
+[148.颜色分类](lintcode/code/148.java)
 
 ### 字符串
 [78.最长公共前缀](lintcode/code/78.java)
@@ -37,6 +43,7 @@
 
 ### 贪心算法
 [116.跳跃游戏](lintcode/code/116.java)
+[400.最大间距](lintcode/code/400.java)
 
 ### 位操作
 [83.落单的数II](lintcode/code/83.java)
