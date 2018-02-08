@@ -3,6 +3,7 @@
 
 ### 数组 链表
 [64.合并排序数组](lintcode/code/64.java)
+[124.最长连续序列](lintcode/code/124.java)
 [156.合并区间](lintcode/code/156.java)
 [400.最大间距](lintcode/code/400.java)
 
