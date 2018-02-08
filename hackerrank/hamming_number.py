@@ -36,8 +36,6 @@ def generalisedHammingNumbers(n, k):
         for k in dic:
             while k * hammings[dic[k]] <= current:
                 dic[k] += 1
-
-    print hammings
     return len(hammings)
 
 
