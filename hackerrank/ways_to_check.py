@@ -12,8 +12,11 @@ def waysToGiveACheck(board):
     except:
         return 0
     board[1][pcol] = '#'
+    if checkState(board, kpos):
+        return 4
+
     count = 0
-    
+
     for promotion in ('N', 'B', 'Q', 'R'):
         board[0][pcol] = promotion
         if checkState(board, kpos):
