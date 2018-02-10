@@ -1,5 +1,5 @@
 
-# LintCode
+# 算法题目(LintCode/LeetCode/Hackerrank)
 
 ### 数组 链表
 [31.数组划分](lintcode/code/31.java)
@@ -8,7 +8,7 @@
 [138.子数组之和](lintcode/code/138.cpp)
 [156.合并区间](lintcode/code/156.java)
 [400.最大间距](lintcode/code/400.java)
-
+[406.和大于S的最小子数组](lintcode/code/406.cpp)
 
 ### 指针
 [148.颜色分类](lintcode/code/148.java)
@@ -28,8 +28,12 @@
 [202.线段树的查询](lintcode/code/202.java)
 [203.线段树的修改](lintcode/code/203.java)
 
-### 回溯法/DFS/BFS
+### 回溯法/DFS
 [123.单词搜索](lintcode/code/123.py) [135.数字组合](lintcode/code/135.java) [152.组合](lintcode/code/152.java) [427.生成括号](lintcode/code/427.java) [136.分割回文串](lintcode/code/136.java)
+
+### BFS
+[120.单词接龙](lintcode/code/120.java)
+[[Indeed]BleedingInk](hackerrank/bleeding_ink.py)
 
 ### Union Find
 [178.图是否是树](lintcode/code/178.java)
