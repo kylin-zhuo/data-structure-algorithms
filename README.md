@@ -29,6 +29,9 @@
 [201.线段树的构造](lintcode/code/201.java)
 [202.线段树的查询](lintcode/code/202.java)
 [203.线段树的修改](lintcode/code/203.java)
+[205.区间最小数](lintcode/code/205.java)
+[206.区间求和I](lintcode/code/206.java)
+[207.区间求和II](lintcode/code/207.java)
 
 ### 回溯法/DFS
 [90.k数和II](lintcode/code/90.java)
