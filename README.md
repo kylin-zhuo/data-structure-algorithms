@@ -32,16 +32,21 @@
 [205.区间最小数](lintcode/code/205.java)
 [206.区间求和I](lintcode/code/206.java)
 [207.区间求和II](lintcode/code/207.java)
+[249.统计前面比自己小的数的个数](lintcode/code/249.java)
 
-### 回溯法/DFS
+#### 回溯法/DFS
 [90.k数和II](lintcode/code/90.java)
 [123.单词搜索](lintcode/code/123.py) [135.数字组合](lintcode/code/135.java) [152.组合](lintcode/code/152.java) [427.生成括号](lintcode/code/427.java) [136.分割回文串](lintcode/code/136.java)
 
-### BFS
+#### BFS
 [120.单词接龙](lintcode/code/120.java)
 [[Indeed]BleedingInk](hackerrank/bleeding_ink.py)
 
-### Union Find
+#### 拓扑排序
+[127.拓扑排序](lintcode/code/127.java)
+[615.课程表](lintcode/code/615.java)
+
+#### Union Find
 [178.图是否是树](lintcode/code/178.java)
 
 ### 动态规划
