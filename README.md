@@ -16,6 +16,7 @@
 ### 字符串
 [78.最长公共前缀](lintcode/code/78.java)
 [79.最长公共子串](lintcode/code/79.java)
+[417.有效数字](lintcode/code/417.java)
 [491.回文数字](lintcode/code/491.java)
 
 ### 二分查找
