@@ -1,7 +1,7 @@
 
 # 算法题目(LintCode/LeetCode/Hackerrank)
 
-### 数组 链表
+### 数组
 [31.数组划分](lintcode/code/31.java)
 [64.合并排序数组](lintcode/code/64.java)
 [124.最长连续序列](lintcode/code/124.java)
@@ -10,16 +10,19 @@
 [400.最大间距](lintcode/code/400.java)
 [406.和大于S的最小子数组](lintcode/code/406.cpp)
 
-### 指针
+#### 链表
+[102.带环链表](lintcode/code/102.java)
+
+#### 指针
 [148.颜色分类](lintcode/code/148.java)
 
-### 字符串
+#### 字符串
 [78.最长公共前缀](lintcode/code/78.java)
 [79.最长公共子串](lintcode/code/79.java)
 [417.有效数字](lintcode/code/417.java)
 [491.回文数字](lintcode/code/491.java)
 
-### 二分查找
+#### 二分查找
 [75.寻找峰值](lintcode/code/75.java)
 [76.最长上升子序列](lintcode/code/76.java)
 
