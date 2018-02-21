@@ -22,6 +22,7 @@
 [79.最长公共子串](lintcode/code/79.java)
 [417.有效数字](lintcode/code/417.java)
 [491.回文数字](lintcode/code/491.java)
+[775.回文对](lintcode/code/775.cpp)
 
 #### 二分查找
 [75.寻找峰值](lintcode/code/75.java)
@@ -71,9 +72,12 @@
 [393.买卖股票的最佳时机IV](lintcode/code/393.java)
 [513.完美平方](lintcode/code/513.py)
 
-### 优先队列
+### 优先队列/堆
+[130.堆化](lintcode/code/130.java)
 [81.数据流中位数](lintcode/code/81.java)
 [104.合并k个排序链表](lintcode/code/104.java)
+[401.排序矩阵中的从小到大第k个数](lintcode/code/401.java)
+[471.最高频的K个单词](lintcode/code/471.java)
 
 ### 贪心算法
 [116.跳跃游戏](lintcode/code/116.java)
