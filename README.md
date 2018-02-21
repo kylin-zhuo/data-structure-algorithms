@@ -11,6 +11,7 @@
 [406.和大于S的最小子数组](lintcode/code/406.cpp)
 
 #### 链表
+[96.链表划分](lintcode/code/96.java)
 [102.带环链表](lintcode/code/102.java)
 
 #### 指针
@@ -37,6 +38,11 @@
 [206.区间求和I](lintcode/code/206.java)
 [207.区间求和II](lintcode/code/207.java)
 [249.统计前面比自己小的数的个数](lintcode/code/249.java)
+
+#### 字典树 Trie
+[442.实现Trie](lintcode/code/442.java)
+[473.单词添加与查找](lintcode/code/473.java)
+[722.最大异或子数组VI](lintcode/code/722.java)
 
 #### 回溯法/DFS
 [90.k数和II](lintcode/code/90.java)
