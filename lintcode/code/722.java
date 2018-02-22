@@ -25,13 +25,9 @@ public class Solution {
     
     void insert(TrieNode root, int prefix) {
         TrieNode cur = root;
-        for (int i = 31; i >= 0; i--) 
-        {
+        for (int i = 31; i >= 0; i--) {
             int val = ((1 << i) & prefix) >> i;
-            if (cur.children[val] == null) 
-            {
-                cur.children[val] = new TrieNode();
-            }
+            if (cur.children[val] == null) cur.children[val] = new TrieNode();
             cur = cur.children[val];
         }
         cur.val = prefix;
@@ -40,8 +36,7 @@ public class Solution {
     int query(TrieNode root, int prefix)
     {
         TrieNode cur = root;
-        for (int i = 31; i >= 0; i--) 
-        {
+        for (int i = 31; i >= 0; i--) {
             int val = (prefix & (1 << i)) >> i;
             if (cur.children[1 - val] != null) cur = cur.children[1 - val];
             else cur = cur.children[val];
