@@ -53,6 +53,7 @@
 
 #### BFS
 [120.单词接龙](lintcode/code/120.java)
+[e130.Surrounded Regions](lintcode/code/e130.py)
 [[Indeed]BleedingInk](hackerrank/bleeding_ink.py)
 
 #### 拓扑排序
@@ -61,6 +62,7 @@
 
 #### Union Find
 [178.图是否是树](lintcode/code/178.java)
+[e684.Redundant Connection](lintcode/code/e684.py)
 
 ### 动态规划
 [77.最长公共子序列](lintcode/code/77.java)
