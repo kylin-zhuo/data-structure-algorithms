@@ -90,3 +90,6 @@
 
 ### 位操作
 [83.落单的数II](lintcode/code/83.java)
+
+#### 其他
+[landing.ai.interview](interviews/landing.ai.py)
