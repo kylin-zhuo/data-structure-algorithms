@@ -10,8 +10,6 @@ Given lectures and their starting and ending times
 examples = [[0,10], [2,5], [4,9], [11,15], [12,18]]
 
 
-
-
 """
 Function 1 return the minimum number of students to cover all the lectures
 """
@@ -57,9 +55,3 @@ def function2(arr):
 
 print(function1(examples))
 print(function2(examples))
-
-
-
-
-
-
