@@ -92,4 +92,4 @@
 [83.落单的数II](lintcode/code/83.java)
 
 #### 其他
-[landing.ai.interview](interviews/landing.ai.py)
+[la2018.2.23](interviews/landing.ai.py)
