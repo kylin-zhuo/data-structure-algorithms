@@ -46,10 +46,11 @@ def function2(arr):
 			count += 1
 			continue
 		ps, pe = interval
-		if not (e < ps or s > pe):
-			interval = (max(s, ps), min(e, pe))
-		else:
+		if e < ps or s > pe:
 			interval = None
+		else:
+			interval = (max(s, ps), min(e, pe))
+			
 	return count 
 
 
