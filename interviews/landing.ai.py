@@ -9,7 +9,6 @@ Given lectures and their starting and ending times
 """
 examples = [[0,10], [2,5], [4,9], [11,15], [12,18]]
 
-
 """
 Function 1 return the minimum number of students to cover all the lectures
 """
@@ -26,7 +25,6 @@ def function1(arr):
 				heappop(heap)
 			heappush(heap, e)
 	return len(heap)
-
 
 """
 Imagine the student is lazy for attending the whole lecture
@@ -50,9 +48,7 @@ def function2(arr):
 			interval = None
 		else:
 			interval = (max(s, ps), min(e, pe))
-			
 	return count 
-
 
 print(function1(examples))
 print(function2(examples))
