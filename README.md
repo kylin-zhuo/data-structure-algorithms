@@ -31,12 +31,13 @@
 [159.寻找旋转排序数组中的最小值](lintcode/code/159.java)
 
 #### 二叉树 Binary Tree
-[66.二叉树前序遍历](lintcode/code/66.java) [67.二叉树中序遍历](lintcode/code/67.java) [68.二叉树后序遍历](lintcode/code/68.java) [73.从前序遍历和中序遍历构造二叉树](lintcode/code/73.java) [85.在二叉查找树中插入节点](lintcode/code/85.java) [86.二叉查找树迭代器](lintcode/code/86.java) [87.删除二叉查找树的节点](lintcode/code/87.java) [93.平衡的二叉树](lintcode/code/93.java) [94.二叉树中的最大路径和](lintcode/code/94.java) [164.不同的二叉查找树II](lintcode/code/164.java)
+[66.前序遍历](lintcode/code/66.java)
+[67.中序遍历](lintcode/code/67.java) [68.后序遍历](lintcode/code/68.java) [73.从前序和中序遍历构造二叉树](lintcode/code/73.java) [85.在二叉查找树中插入节点](lintcode/code/85.java) [86.二叉查找树迭代器](lintcode/code/86.java) [87.删除二叉查找树的节点](lintcode/code/87.java) [93.平衡的二叉树](lintcode/code/93.java) [94.二叉树中的最大路径和](lintcode/code/94.java) [164.不同的二叉查找树II](lintcode/code/164.java)
 
 #### 线段树 Segmented Tree
-[201.线段树的构造](lintcode/code/201.java)
-[202.线段树的查询](lintcode/code/202.java)
-[203.线段树的修改](lintcode/code/203.java)
+[201.构造](lintcode/code/201.java)
+[202.查询](lintcode/code/202.java)
+[203.修改](lintcode/code/203.java)
 [205.区间最小数](lintcode/code/205.java)
 [206.区间求和I](lintcode/code/206.java)
 [207.区间求和II](lintcode/code/207.java)
