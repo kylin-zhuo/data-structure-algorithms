@@ -50,6 +50,8 @@
 [722.最大异或子数组VI](lintcode/code/722.java)
 
 #### 回溯法/DFS
+[17.子集](lintcode/code/17.java)
+[18.带重复元素子集](lintcode/code/18.java)
 [90.k数和II](lintcode/code/90.java)
 [123.单词搜索](lintcode/code/123.py) [135.数字组合](lintcode/code/135.java) [152.组合](lintcode/code/152.java) [427.生成括号](lintcode/code/427.java) [136.分割回文串](lintcode/code/136.java)
 
