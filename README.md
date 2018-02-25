@@ -3,6 +3,7 @@
 
 ### 数组
 [31.数组划分](lintcode/code/31.java)
+[51.上一个排列](lintcode/code/51.java)
 [64.合并排序数组](lintcode/code/64.java)
 [124.最长连续序列](lintcode/code/124.java)
 [138.子数组之和](lintcode/code/138.cpp)
