@@ -16,7 +16,7 @@
 [102.带环链表](lintcode/code/102.java)
 
 #### 指针
-[148.颜色分类](lintcode/code/148.java)
+[148.颜色分类](lintcode/code/148.py)
 
 #### 字符串
 [78.最长公共前缀](lintcode/code/78.java)
