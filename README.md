@@ -1,7 +1,7 @@
 
 # 算法题目(LintCode/LeetCode/Hackerrank)
 
-### 数组
+#### 数组
 [31.数组划分](lintcode/code/31.java)
 [51.上一个排列](lintcode/code/51.java)
 [64.合并排序数组](lintcode/code/64.java)
@@ -68,7 +68,7 @@
 [178.图是否是树](lintcode/code/178.java)
 [e684.Redundant Connection](lintcode/code/e684.py)
 
-### 动态规划
+#### 动态规划
 [77.最长公共子序列](lintcode/code/77.java)
 [79.最长公共子串](lintcode/code/79.java)
 [89.K数和](lintcode/code/89.java)
@@ -80,7 +80,7 @@
 [393.买卖股票的最佳时机IV](lintcode/code/393.java)
 [513.完美平方](lintcode/code/513.py)
 
-### 优先队列/堆
+#### 优先队列/堆
 [130.堆化](lintcode/code/130.java)
 [81.数据流中位数](lintcode/code/81.java)
 [104.合并k个排序链表](lintcode/code/104.java)
@@ -88,11 +88,11 @@
 [401.排序矩阵中的从小到大第k个数](lintcode/code/401.java)
 [471.最高频的K个单词](lintcode/code/471.java)
 
-### 贪心算法
+#### 贪心算法
 [116.跳跃游戏](lintcode/code/116.java)
 [400.最大间距](lintcode/code/400.java)
 
-### 位操作
+#### 位操作
 [83.落单的数II](lintcode/code/83.java)
 
 #### 其他
