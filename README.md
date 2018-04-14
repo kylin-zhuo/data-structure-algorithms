@@ -33,7 +33,14 @@
 
 #### 二叉树 Binary Tree
 [66.前序遍历](lintcode/code/66.java)
-[67.中序遍历](lintcode/code/67.java) [68.后序遍历](lintcode/code/68.java) [73.从前序和中序遍历构造二叉树](lintcode/code/73.java) [85.在二叉查找树中插入节点](lintcode/code/85.java) [86.二叉查找树迭代器](lintcode/code/86.java) [87.删除二叉查找树的节点](lintcode/code/87.java) [93.平衡的二叉树](lintcode/code/93.java) [94.二叉树中的最大路径和](lintcode/code/94.java) [164.不同的二叉查找树II](lintcode/code/164.java)
+[67.中序遍历](lintcode/code/67.java) [68.后序遍历](lintcode/code/68.java)
+[73.从前序和中序遍历构造二叉树](lintcode/code/73.java)
+[85.在二叉查找树中插入节点](lintcode/code/85.java)
+[86.二叉查找树迭代器](lintcode/code/86.java)
+[87.删除二叉查找树的节点](lintcode/code/87.java)
+[93.平衡的二叉树](lintcode/code/93.java)
+[94.二叉树中的最大路径和](lintcode/code/94.java)
+[164.不同的二叉查找树II](lintcode/code/164.java)
 
 #### 线段树 Segmented Tree
 [201.构造](lintcode/code/201.java)
@@ -50,10 +57,15 @@
 [722.最大异或子数组VI](lintcode/code/722.java)
 
 #### 回溯法/DFS
+[Permutation](algorithms/backtracking/permutation.py)
 [17.子集](lintcode/code/17.java)
 [18.带重复元素子集](lintcode/code/18.java)
 [90.k数和II](lintcode/code/90.java)
-[123.单词搜索](lintcode/code/123.py) [135.数字组合](lintcode/code/135.java) [152.组合](lintcode/code/152.java) [427.生成括号](lintcode/code/427.java) [136.分割回文串](lintcode/code/136.java)
+[123.单词搜索](lintcode/code/123.py)
+[135.数字组合](lintcode/code/135.java)
+[152.组合](lintcode/code/152.java)
+[427.生成括号](lintcode/code/427.java)
+[136.分割回文串](lintcode/code/136.java)
 
 #### BFS
 [120.单词接龙](lintcode/code/120.java)
