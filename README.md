@@ -57,7 +57,7 @@
 [722.最大异或子数组VI](lintcode/code/722.java)
 
 #### 回溯法/DFS
-[Permutation](algorithms/backtracking/permutation.py)
+[Permutation](algorithms2/backtracking/permutation.py)
 [17.子集](lintcode/code/17.java)
 [18.带重复元素子集](lintcode/code/18.java)
 [90.k数和II](lintcode/code/90.java)
