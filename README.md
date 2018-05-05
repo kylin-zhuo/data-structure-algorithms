@@ -1,6 +1,10 @@
 
 # 算法题目(Lintcode/LeetCode/Hackerrank)
 
+#### System Design
+[leet211.word dictionary](codes/code/leet211.py)
+[leet355.twitter](codes/code/leet355.py)
+
 #### 数组
 [31.数组划分](codes/code/31.java)
 [51.上一个排列](codes/code/51.java)
