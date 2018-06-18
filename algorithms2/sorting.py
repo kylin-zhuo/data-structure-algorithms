@@ -14,7 +14,8 @@ def quickSort(A, p, r):
   if p < r:
     q = partition(A, p, r)
     quickSort(A, p, q-1)
-    quickSort(A, q+1, r)     
+    quickSort(A, q+1, r)
+      
 
 
 # Merge Sort
@@ -41,7 +42,7 @@ def merge(A, p, q, r):
       j += 1
   for i in range(p, r+1):
       A[i] = B[i]
-         
+
 
 def mergeSort(A, p, r):
   if p < r:
@@ -54,10 +55,10 @@ def mergeSort(A, p, r):
 # Heap Sort
 def leftChild(start):
   return (start+1)*2-1
- 
+
 def rightChild(start):
   return (start+1)*2
- 
+
 def maxHeapify(A, start, size):
   left = leftChild(start)
   right = rightChild(start)
@@ -70,12 +71,12 @@ def maxHeapify(A, start, size):
     if largest != start:
       A[start], A[largest] = A[largest], A[start]
       maxHeapify(A, largest, size)
-         
+
 def buildMaxheap(A):
   size = len(A)
   for i in range(size/2)[::-1]:
     maxHeapify(A, i, size)
-         
+
 def heapSort(A):
   buildMaxheap(A)
   size = len(A)
@@ -86,7 +87,7 @@ def heapSort(A):
 
 
 import random
-import time 
+import time
 
 for size in range(1,8):
   A = range(10 ** size)
@@ -97,8 +98,3 @@ for size in range(1,8):
   # quickSort(A, 0, len(A)-1)
   heapSort(A)
   print str(size) + ": " + str(time.time() - t)
-
-
-
-
-
