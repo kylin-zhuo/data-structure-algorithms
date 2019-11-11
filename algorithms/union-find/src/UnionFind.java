@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class UnionFind {
+public class UnionFind {
 
 	private int[] parent;
 
@@ -18,7 +18,7 @@ class UnionFind {
 
 	public UnionFind(int nElements) {
 		// without element names
-		this.nElements = nElements;
+		this.nElements = this.nGroups = nElements;
 		this.parent = new int[nElements];
         this.groupSize = new int[nElements]; 
         for (int i = 0; i < nElements; i++){
@@ -32,7 +32,7 @@ class UnionFind {
 		if (nElements != elementNames.length) {
 			throw IllegalArgumentException("the size doesn't match.");
 		}
-		this.nElements = nElements;
+		this.nElements = this.nGroups = nElements;
 		this.parent = new int[nElements];
 		this.groupSize = new int[nElements];
 		// number the element names
@@ -89,10 +89,6 @@ class UnionFind {
     public int getGroupSize(int i) {
         return groupSize[find(i)];
     }
-
-
-    
-
 
     // getters and setter
     public int[] getParent() {
