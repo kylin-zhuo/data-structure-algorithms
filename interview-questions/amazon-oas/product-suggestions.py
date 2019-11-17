@@ -14,7 +14,8 @@ The input to the method/function consist of three arguments:
     customerQuery, a string representing the full search query of the customer.
 
 Output:
-Return a list of a list of strings, where each list represents the product suggestions made by the system as the customer types each character of the customerQuery. Assume the customer types characters in order without deleting/removing any characters.
+Return a list of a list of strings, where each list represents the product suggestions made by the system as the customer types each character of the customerQuery. 
+Assume the customer types characters in order without deleting/removing any characters.
 
 Example:
 Input:
@@ -48,85 +49,52 @@ Output:
 #     def stream_query(self, word):
 #         res = []
 #         node = self.trie
-        
 
+from heapq import heappush, heappop
 import unittest
 
+class TrieNode(object):
+    
+    def __init__(self, val):
+        self.children = {}
+        self.is_word = False
+        self.suggestions = []
+        self.val = val
 
 class Trie:
+
     def __init__(self):
         self.root = TrieNode("")
-
+        self.N = 3
+    
     def insert(self, word):
-        current_node = self.root
+        curr = self.root
         val = ""
-
         for w in word:
             val += w
-            if w not in current_node.children:
-                current_node.children[w] = TrieNode(val)
+            if w not in curr.children:
+                curr.children[w] = TrieNode(val)
+            curr = curr.children[w]
+            heappush(curr.suggestions, word)
+            if len(curr.suggestions) > self.N:
+                heappop(curr.suggestions)
+        curr.is_word = True
+    
+    def build(self, words):
+        for word in words:
+            self.insert(word)
 
-            current_node = current_node.children[w]
-
-        current_node.is_word = True
-
-    def search_words_with_prefix(self, prefix):
-        current_node = self.root
-
-        for p in prefix:  # O(k)
-            if p not in current_node.children:
-                return []
-
-            current_node = current_node.children[p]
-
-        words = self.get_words(current_node)  # O(n.l)
-        words.sort()  # O(n.logn)
-
-        return words if len(words) <= 3 else words[0:3]
-
-    def get_words(self, node):
-        stack = [node]
+    def query(self, keyword):
         res = []
-
-        while stack:
-            current_node = stack.pop()
-
-            if current_node.is_word:
-                res.append(current_node.val)
-
-            for child in current_node.children.values():
-                stack.append(child)
-
+        curr = self.root
+        for k in keyword:
+            if k not in curr.children:
+                res.append([])
+                continue
+            curr = curr.children[k]
+            res.append(curr.suggestions)
         return res
-
-    # Assume length of query and average length of product name is trivial.
-    # Then T(n) = n^2 * logn
-    def product_suggestions(self, products, query):
-        if len(query) <= 1 or not products:
-            return None
-
-        for product in products:  # O(n). n is number of products
-            self.insert(product)  # O(l). l is average length of a product name
-
-        custom_queries = []
-
-        for i in range(2, len(query) + 1):  # O(k). k is length of query
-            custom_queries.append(query[0:i])
-
-        res = []
-
-        for custom_query in custom_queries:  # O(k)
-            res.append(self.search_words_with_prefix(custom_query))  # O(k + n.l + n.logn)
-
-        return res
-
-
-class TrieNode:
-    def __init__(self, val):
-        self.val = val
-        self.children = dict()
-        self.is_word = False
-
+        
 
 class Test(unittest.TestCase):
 
@@ -135,20 +103,31 @@ class Test(unittest.TestCase):
         products = ["mobile", "mouse", "moneypot", "monitor", "mousepad"]
         query = "mouse"
         expected = [["mobile", "moneypot", "monitor"], ["mouse", "mousepad"], ["mouse", "mousepad"], ["mouse", "mousepad"]]
+        trie.build(products)
+        
         self.assertEqual(expected, trie.product_suggestions(products, query), "Should return correct list of matched products")
 
-        trie = Trie()
-        products = ["ps4", "ps4 slim", "ps4 pro", "xbox", "tissue",
-                    "standing table", "house", "true love", "tracking device"]
-        query = "ps4"
-        expected = [["ps4", "ps4 pro", "ps4 slim"], ["ps4", "ps4 pro", "ps4 slim"]]
-        self.assertEqual(expected, trie.product_suggestions(products, query), "Should return correct list of matched products")
-        query = "tru"
-        expected = [["tracking device", "true love"], ["true love"]]
-        self.assertEqual(expected, trie.product_suggestions(products, query), "Should return correct list of matched products")
-        query = "t"
-        self.assertEqual(None, trie.product_suggestions(products, query),
-                         "Should return None if query is less than 2 characters")
+        # trie = Trie()
+        # products = ["ps4", "ps4 slim", "ps4 pro", "xbox", "tissue",
+        #             "standing table", "house", "true love", "tracking device"]
+        # query = "ps4"
+        # expected = [["ps4", "ps4 pro", "ps4 slim"], ["ps4", "ps4 pro", "ps4 slim"]]
+        # self.assertEqual(expected, trie.product_suggestions(products, query), "Should return correct list of matched products")
+        # query = "tru"
+        # expected = [["tracking device", "true love"], ["true love"]]
+        # self.assertEqual(expected, trie.product_suggestions(products, query), "Should return correct list of matched products")
+        # query = "t"
+        # self.assertEqual(None, trie.product_suggestions(products, query),
+        #                  "Should return None if query is less than 2 characters")
+                         
+# unittest.main()
 
+if __name__ == "__main__":
 
-unittest.run()
+    trie = Trie()
+    products = ["mobile", "mouse", "moneypot", "monitor", "mousepad"]
+    query = "mouse"
+    expected = [["mobile", "moneypot", "monitor"], ["mouse", "mousepad"], ["mouse", "mousepad"], ["mouse", "mousepad"]]
+    trie.build(products)
+    result = trie.query(query)
+    print(result)

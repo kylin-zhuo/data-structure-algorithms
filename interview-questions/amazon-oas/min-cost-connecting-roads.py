@@ -8,7 +8,8 @@ Input:
 
     n, an int representing the total number of nodes.
     edges, a list of integer pair representing the nodes already connected by an edge.
-    newEdges, a list where each element is a triplet representing the pair of nodes between which an edge can be added and the cost of addition, respectively (e.g. [1, 2, 5] means to add an edge between node 1 and 2, the cost would be 5).
+    newEdges, a list where each element is a triplet representing the pair of nodes between which an edge can be added and the cost of addition, respectively 
+    (e.g. [1, 2, 5] means to add an edge between node 1 and 2, the cost would be 5).
 
 Example 1:
 
