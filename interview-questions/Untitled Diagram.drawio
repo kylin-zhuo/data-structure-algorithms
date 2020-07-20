@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2020-07-20T00:46:22.239Z" agent="5.0 (Macintosh)" version="13.4.8" etag="ui0oyN6WGMZR4YoHNci0" type="github"><diagram id="o3g90sURLyUjrWTTQyZM">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-07-20T01:28:57.879Z" agent="5.0 (Macintosh)" etag="0-LwVGFaVVBh3lRms0sE" version="13.4.8" type="github">
+  <diagram id="o3g90sURLyUjrWTTQyZM" name="Page-1">
+    <mxGraphModel dx="1143" dy="778" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-1" value="&lt;div&gt;1 billion users&lt;/div&gt;&lt;div&gt;1 in 1000 of them are uploading&lt;/div&gt;&lt;div&gt;10 min clip daily&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&amp;gt; 1M uploads/day&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="75" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="&lt;div&gt;Estimate the volume:&lt;/div&gt;&lt;div&gt;2 hour long movie is 4GB&lt;/div&gt;&lt;div&gt;assume 90% compression rate&lt;/div&gt;&lt;div&gt;-&amp;gt; 400MB/120min -&amp;gt; 3MB/min&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="75" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-3" value="&lt;div&gt;Daily Storage need:&lt;/div&gt;&lt;div&gt;&lt;b&gt;1 billion * 0.001 * 10min * 3MB/min = 30TB&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-4" value="&lt;div&gt;Apply redundancy: keep 3 copies&lt;/div&gt;&lt;div&gt;Apply different resolutions: 720p/480p/360p/240p... -&amp;gt; 2 times of the volume&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-5" value="~ 0.2 PB per day of storage needed" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="140" y="270" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-6" value="&lt;div&gt;Estimate the cache requirement for video meta-data&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="350" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-7" value="&lt;div&gt;thumbnails:&lt;/div&gt;&lt;div&gt;each: 1MB*0.1*0.1 = 10KB&lt;br&gt;&lt;/div&gt;&lt;div&gt;cache the past 90 days: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;90 days * 1M /day * 10KB ~ 1TB&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;and this is in RAM.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-8" value="&lt;div&gt;1TB / (16GB/node) = 64 nodes&lt;/div&gt;&lt;div&gt;keep 3 copies -&amp;gt; 200 nodes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;avoid full capacity, keep 50% max cap -&amp;gt; 400 nodes&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="390" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-9" value="Estimate the number of processors to process videos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="530" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-10" value="&lt;div&gt;1M videos per day&lt;/div&gt;&lt;div&gt;10 mins each &lt;br&gt;&lt;/div&gt;&lt;div&gt;10^7 mins per day&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="570" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-11" value="assume 1 hour of unprocessed video is 1GB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="640" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-12" value="&lt;div&gt;Calculate the size of video needed to be processed per second:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="660" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-13" value="1000/60 MB/min * 10^7 mins/day * 1/24*3600 dat/second -&amp;gt; &lt;b&gt;2000MB/second&lt;/b&gt; " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="690" width="430" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-14" value="&lt;div&gt;Read (10ms/MB) -&amp;gt; Process(20ms/MB) -&amp;gt; Write (20ms/MB)&lt;/div&gt;&lt;div&gt;50ms needed for a MB&lt;/div&gt;&lt;div&gt;50ms/MB * 2000MB/second = 10^5 ms/s = 100 seconds/second&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="740" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1v_kYQzwWO8gBtm6BxJO-15" value="This means need at least 100 parallel processors " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="90" y="810" width="290" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
